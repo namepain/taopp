@@ -1,0 +1,46 @@
+.carousel {
+  height: 100%;
+  overflow: hidden;
+
+  &-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-dots {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    height: 20px;
+
+    > li {
+      display: inline-block;
+      list-style: none;
+      margin-right: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & button {
+        display: none;
+      }
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: rgba(#fff, .6);
+      }
+
+      &.slick-active::before {
+        background-color:#fff;
+      }
+    }
+  }
+}

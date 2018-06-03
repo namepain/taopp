@@ -1,0 +1,55 @@
+.tabMenu {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  background: #fff;
+  border-top: 1px solid #E4E2E2; 
+
+  &-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &.active {
+      color: #ff4c64;
+      
+      & .tabMenu-text {
+        color: #ff4c64;
+      }
+
+      & .tabMenu-icon-movie {
+        background: #fff url("../../common/icons/movie-solid.png") 50% /contain no-repeat;
+      }
+
+      & .tabMenu-icon-user {
+        background: #fff url("../../common/icons/user-solid.png") 50% /contain no-repeat;
+      }
+    }
+  }
+
+  &-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: #ccc;
+
+    &-movie {
+      background: #fff url("../../common/icons/movie.png") 50% /contain no-repeat;
+    }
+
+    &-user {
+      background: #fff url("../../common/icons/user.png") 50% /contain no-repeat;
+    }
+  }
+
+  &-text {
+    color: #666;
+    font-size: 10px;
+    margin-top: 4px;
+  }
+}
