@@ -1,0 +1,46 @@
+.summary-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+
+.summary-item:nth-child(1) {
+  flex: 0 0 50%; }
+
+.summary-score {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; }
+
+.summary-title {
+  font-size: 8px;
+  color: #999; }
+  .summary-title.title-right {
+    text-align: right; }
+
+.summary .summaryBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .summary .summaryBtn-item {
+    width: 180px;
+    height: 46px;
+    line-height: 46px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .summary .summaryBtn .btn-see {
+    margin-left: 20px; }
+  .summary .summaryBtn .icon {
+    display: inline-block;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px; }
+  .summary .summaryBtn .icon-heart {
+    background: url("../../../../common/icons/heart.svg") 50%/contain no-repeat; }
+  .summary .summaryBtn .icon-star {
+    background: url("../../../../common/icons/star.svg") 50%/contain no-repeat; }

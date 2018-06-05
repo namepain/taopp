@@ -1,0 +1,50 @@
+.user-top {
+  padding: 10px 20px 30px;
+  background-color: #313440;
+  color: #fff; }
+
+.user .operation {
+  display: flex;
+  justify-content: space-between; }
+  .user .operation-setting, .user .operation-message {
+    width: 40px;
+    height: 40px; }
+  .user .operation-setting {
+    background: transparent url("../../common/icons/setting.svg") 0 50%/20px 20px no-repeat; }
+  .user .operation-message {
+    background: transparent url("../../common/icons/message.svg") 100% 50%/20px 20px no-repeat; }
+
+.user-info {
+  display: flex;
+  margin-top: 20px; }
+
+.user-avatar {
+  width: 70px;
+  height: 70px;
+  background: #ccc url("/source/avatar.jpeg") 0 50%/70px 70px no-repeat;
+  margin-right: 20px;
+  border-radius: 50%; }
+
+.user-detail {
+  flex: 1; }
+
+.user-name {
+  font-size: 20px;
+  line-height: 26px; }
+
+.user-follow, .user-fans {
+  margin-top: 10px;
+  font-size: 12px; }
+
+.user-level {
+  padding: 0px 8px;
+  margin-top: 8px;
+  width: 50px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 8px;
+  background: #5a5e78; }
+
+.user-content {
+  padding: 10px 20px; }

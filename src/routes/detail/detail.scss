@@ -1,0 +1,40 @@
+.detail {
+
+  &-top {
+    background: rgb(44, 41, 47);
+  }
+
+  &-operation {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .icon-back {
+    width: 40px;
+    background: transparent url('../../common/icons/back.svg') 100% 50% / 20px 20px no-repeat;
+  }
+  .icon-share {
+    width: 40px;
+    background: transparent url('../../common/icons/share.svg') 0 50% / 20px 20px no-repeat;
+  }
+
+  &-content {
+    padding: 0 20px;
+  }
+
+  .content-module {
+    padding: 14px 0px;
+
+    &:nth-child(n + 2) {
+      border-top: 1px solid #e5e4e4
+    }
+  }
+
+  &-view {
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+  }
+}

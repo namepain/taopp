@@ -1,0 +1,27 @@
+.scoreDis {
+  display: flex;
+  padding: 0px 20px; }
+  .scoreDis-left {
+    width: 130px; }
+    .scoreDis-left .score {
+      font-size: 45px;
+      color: #000;
+      font-weight: 400; }
+    .scoreDis-left .desc {
+      margin-top: 5px;
+      color: #777;
+      font-size: 12px; }
+  .scoreDis-right {
+    flex: 1;
+    margin-top: 10px; }
+  .scoreDis .stars-item {
+    margin-top: 6px;
+    height: 3px;
+    display: flex; }
+  .scoreDis .percent {
+    flex: 1;
+    margin-left: 4px;
+    background-color: #ededed; }
+    .scoreDis .percent-item {
+      height: 100%;
+      background-color: #393939; }

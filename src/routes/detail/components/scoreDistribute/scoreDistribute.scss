@@ -1,0 +1,45 @@
+.scoreDis {
+  display: flex;
+  padding: 0px 10px;
+
+  &-left {
+    width: 130px;
+
+    .score {
+      font-size: 45px;
+      color: #000;
+      font-weight: 400;
+    }
+
+    .desc {
+      margin-top: 5px;
+      color: #777;
+      font-size: 12px;
+    }
+  }
+
+  &-right {
+    flex: 1;
+    margin-top: 10px;
+  }
+
+  .stars {
+
+    &-item {
+      margin-top: 6px;
+      height: 3px;
+      display: flex;
+    }
+  }
+
+  .percent {
+    flex: 1;
+    margin-left: 4px;
+    background-color: #ededed;
+
+    &-item {
+      height: 100%;
+      background-color: #393939;
+    }
+  }
+}

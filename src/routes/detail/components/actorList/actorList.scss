@@ -1,0 +1,61 @@
+.actorList {
+
+  &-title {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-right: -20px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &-item {
+    list-style: none;
+    padding-right: 6px;
+
+    &:last-child {
+      padding-right: 20px;
+    }
+  }
+
+  .actorInfo {
+    display: block;
+    width: 88px;
+    text-decoration: none;
+    text-align: center;
+
+    &-actorImg {
+      height: 120px;
+      background-color: #ccc;
+      background-size: 100% 100%;
+    }
+  }
+
+  .detail {
+    margin: 8px 0 0;
+    padding: 0;
+    
+    &-name {
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    &-job {
+      margin: 0;
+      font-size: 12px;
+      color: #777;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}

@@ -14,3 +14,7 @@ https://acs.m.taopiaopiao.com/h5/mtop.film.mtopshowapi.getshowsbycitycode/4.0/?j
 
 https://acs.m.taopiaopiao.com/h5/mtop.film.mtopregionapi.getallregion/4.0/?jsv=2.4.11&appKey=12574478&t=1528020911844&sign=a502a6b4689fa1711e58e51df345644d&api=mtop.film.MtopRegionAPI.getAllRegion&v=4.0&expire_time=3600000&timeout=10000&forceAntiCreep=true&AntiCreep=true&type=jsonp&dataType=jsonp&callback=mtopjsonp2&data=%7B%22platform%22%3A%228%22%7D
 
+
+详情页：
+
+https://acs.m.taopiaopiao.com/h5/mtop.film.mtopshowapi.getextendshowbyid/5.4/?jsv=2.4.11&appKey=12574478&t=1528179177651&sign=fed3e33d7d8c4abca44835acd0a14d3a&api=mtop.film.MtopShowAPI.getExtendShowById&v=5.4&timeout=10000&forceAntiCreep=true&AntiCreep=true&type=jsonp&dataType=jsonp&callback=mtopjsonp1&data=%7B%22showid%22%3A%22227592%22%2C%22cityCode%22%3A%22510100%22%2C%22platform%22%3A%228%22%7D
