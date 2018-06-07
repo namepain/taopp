@@ -1,0 +1,98 @@
+.seat {
+  
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 19px;
+
+    .back {
+      width: 20px;
+      height: 20px;
+      background: transparent url("../../common/icons/back-black.svg") 50% / contain no-repeat;
+    }
+    
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .share {
+      width: 20px;
+      height: 20px;
+      background: transparent url("../../common/icons/share-black.svg") 50% / contain no-repeat;
+    }
+  }
+
+  &-movieInfo {
+    margin-left: 16px;
+    padding: 15px 4px;
+
+    &-title {
+      font-size: 16px;
+      line-height: 20px;
+      color: #101010;
+    }
+    
+    &-time {
+      margin-top: 10px;
+      color: #666;
+      font-size: 12px;
+    }
+  }
+
+  &-tip {
+    height: 24px;
+    padding: 10px 0;
+    background: #fff url("../../common/icons/seats.svg") 50% 50% / auto 24px no-repeat;
+  }
+
+  &-hall {
+    background: #f7f7f7;
+    &-screen {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      & p {
+        margin: 0;
+        min-width: 150px;
+        padding: 0 15px;
+        height: 22px;
+        line-height: 22px;
+        font-weight: 400;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-align: center;
+        font-size: 13px;
+        color: rgb(51, 51, 51);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 301 44' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGroup 6%3C/title%3E%3Cg fill='%23E2E2E2' fill-rule='evenodd'%3E%3Cpath d='M238.5 34.593c0 5.028-4.1 9.104-9.163 9.104H95.31L14.662 44C9.6 44 5.5 39.924 5.5 34.896L0 .303 82.48 0H244l-5.5 34.593z'/%3E%3Cpath d='M295.5 34.593c0 5.028-4.1 9.104-9.163 9.104H152.31L71.662 44C66.6 44 62.5 39.924 62.5 34.896L57 .303 139.48 0H301l-5.5 34.593z'/%3E%3C/g%3E%3C/svg%3E");
+      }
+    }
+
+    &-select {
+      overflow-x: scroll;
+    }
+  }
+
+  &-ticket {
+    position: fixed;
+    bottom: 55px;
+    width: 100%;
+  }
+
+  &-buy {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 55px;
+    line-height: 55px;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    background-image: linear-gradient(45deg,#ff7ba0,#ff4d64);
+  }
+}

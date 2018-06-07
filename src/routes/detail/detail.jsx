@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import './detail.css'
+import { Link } from 'react-router-dom'
 import BaseInfo from './components/baseInfo/baseInfo';
 import Summary from './components/summary/summary';
 import ActortList from './components/actorList/actorList'
 import CollapsibleText from '../../components/CollapsibleText/CollapsibleText'
 import Comment from './components/comment/comment'
+import LineLink from '../../components/LineLink/LineLink'
 import fetch from '../../api/fetch'
 
 export default class componentName extends Component {
@@ -76,7 +78,16 @@ export default class componentName extends Component {
           <div className="content-module">
             <Comment />
           </div>
+          <div className="content-module">
+            <h2>影片资料</h2>
+            <div>
+              <LineLink href="" title="幕后花絮" extra="" />
+              <LineLink href="" title="台词精选" extra="" />
+              <LineLink href="" title="出品发行" extra="" />
+            </div>
+          </div>
         </div>
+        <Link to="/seat" className="buyBtn" >选座购票</Link>
       </div>
     )
   }

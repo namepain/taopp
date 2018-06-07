@@ -21,7 +21,7 @@
   }
 
   &-content {
-    padding: 0 20px;
+    padding: 0 20px 55px;
   }
 
   .content-module {
@@ -36,5 +36,18 @@
     font-size: 14px;
     color: #333;
     line-height: 28px;
+  }
+
+  .buyBtn {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-image: linear-gradient(45deg,#ff7ba0,#ff4d64);
   }
 }
