@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './seatSelected.css'
+import { connect } from 'react-redux'
+import { removeSeat } from '../../actions/actions'
 
 const seatSelected = ({data, removeSeat}) => {
   return (
@@ -26,4 +28,12 @@ seatSelected.propTypes = {
   removeSeat: PropTypes.func.isRequired
 }
 
-export default seatSelected
+const mapStateToProps = state => {
+  return { data: state }
+}
+
+const mapDispatchToProps = dispatch => {
+  return { removeSeat: id => dispatch(removeSeat(id)) }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(seatSelected)

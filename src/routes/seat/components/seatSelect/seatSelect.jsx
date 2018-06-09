@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { data } from '../../../../api/seat.json'
+import { addSeat, removeSeat } from '../../actions/actions'
+import { connect } from 'react-redux'
 
 const { returnValue: { data: seats } } = data
 
@@ -17,9 +19,6 @@ const REAL_WIDTH = CANVAS_WIDTH * ratio
 const REAL_HEIGHT = CANVAS_HEIGHT * ratio
 
 export class SeatSelect extends Component {
-  static propTypes = {
-
-  }
 
   componentDidMount() {
     this.ctx = this.refs.canvas.getContext('2d')
@@ -125,4 +124,22 @@ export class SeatSelect extends Component {
   }
 }
 
-export default SeatSelect
+
+SeatSelect.propTypes = {
+  selectedSeat: PropTypes.array.isRequired,
+  addSeat: PropTypes.func.isRequired,
+  removeSeat: PropTypes.func.isRequired
+}
+
+const mapStateToProps = state => {
+  return { selectedSeat: state }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    addSeat: seat => dispatch(addSeat(seat)),
+    removeSeat: id => dispatch(removeSeat(id))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SeatSelect)
