@@ -30,7 +30,7 @@ export class Seat extends Component {
       <Provider store={store}>
         <div className="seat">
           <div className="seat-header">
-            <div className="back"></div>
+            <div className="back" onClick={() => {window.history.back()}}></div>
             <div className="title">德信影城</div>
             <div className="share"></div>
           </div>

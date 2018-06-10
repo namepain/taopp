@@ -54,7 +54,7 @@ export default class componentName extends Component {
       <div className="detail">
         <div className="detail-top">
           <div className="detail-operation">
-            <div className="icon-back"></div>
+            <div className="icon-back" onClick={() => {window.history.back()}}></div>
             <div className="icon-share"></div>
           </div>
           <BaseInfo data={data}/>
