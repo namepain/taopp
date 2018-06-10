@@ -1,3 +1,6 @@
+import './common/css/normalize.css'
+import './common/css/slick.min.css'
+import './common/css/slick-theme.min.css'
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './routes/home/index'
