@@ -87,7 +87,7 @@ export default class componentName extends Component {
             </div>
           </div>
         </div>
-        <Link to="/seat" className="buyBtn" >选座购票</Link>
+        <Link to="/taopp/seat" className="buyBtn" >选座购票</Link>
       </div>
     )
   }

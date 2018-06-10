@@ -11,10 +11,10 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={Home}/>
-          <Route path="/user" exact component={User}/>
-          <Route path="/detail" exact component={Detail}/>
-          <Route path="/seat" exact component={Seat}/>
+          <Route path="/taopp/" exact component={Home}/>
+          <Route path="/taopp/user" exact component={User}/>
+          <Route path="/taopp/detail" exact component={Detail}/>
+          <Route path="/taopp/seat" exact component={Seat}/>
         </Switch>
       </BrowserRouter>
     );

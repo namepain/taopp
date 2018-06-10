@@ -68,7 +68,7 @@ export default class Home extends Component {
           {
             movie.map((item) => (
               <li key={item.id}>
-                <Link to="/detail"><MovieItem data={item} /></Link>
+                <Link to="/taopp/detail"><MovieItem data={item} /></Link>
               </li>
             ))
           }
